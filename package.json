@@ -1,6 +1,6 @@
 {
   "name": "learnnpm-o",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "学习 npm 开发，webpack 打包，ts、babel 构建",
   "main": "lib/index.js",
   "scripts": {
