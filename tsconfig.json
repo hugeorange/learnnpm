@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "experimentalDecorators": true,
         "strictNullChecks": false,
         "module": "ESNext",
         "moduleResolution": "node",
-        "jsx": "react",
+        "jsx": "react", // jsx 靠 tsc 转换，"jsx": "preserve" 是为了保持 jsx 格式输出，由 babel 做 jsx 转换
         "noUnusedParameters": false,
         "noUnusedLocals": false,
         "esModuleInterop": true,
@@ -23,12 +23,12 @@
             "react-dom",
             "node"
         ],
-        // "baseUrl": "src",
-        // "paths": {
-        //     "src/*": [
-        //         "*"
-        //     ]
-        // }
+        "baseUrl": "src",
+        "paths": {
+            "src/*": [ // 相当于 webpack 的alias
+                "*"
+            ]
+        }
     },
     "include": [
         "src/"

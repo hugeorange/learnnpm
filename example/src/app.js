@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-// import LearnNpm from '../../src/index';
+import LearnNpm from '../../src/index';
 
-import LearnNpm from 'learnnpm-o';
+// import LearnNpm from 'learnnpm-o';
 
 const App = () => {
     return (

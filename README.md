@@ -49,3 +49,7 @@
 |____postcss.config.js // postcss配置
 |____src // 组件源码
 ```
+### 打包方式（该分支）
+- ts-loader + tsc + tsconfig.json 将 tsx 处理为 es6
+- babel-loader + babelrc 接盘将 es6 按照 @babel/presents-typescript 处理为 es5代码
+- 话外音: `ts-loader` 与 `new ForkTsCheckerWebpackPlugin` 配合 ==> webpack4之后happypack作用也小了故不用了
