@@ -17,7 +17,7 @@ const devConfig = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: '赛后贴演示',
+            title: 'learn-npm',
             filename: "index.html",
             template: "./public/index.html",
             inject: true,

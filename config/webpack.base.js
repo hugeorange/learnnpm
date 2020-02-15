@@ -5,15 +5,15 @@ module.exports = {
         rules: [
             {
                 // 使用 babel-loader 来编译处理 js 和 jsx 文件
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 use: "babel-loader",
                 exclude: /node_modules/
             },
-            {
-                test: /\.(ts|tsx)$/,
-                use: "ts-loader",
-                exclude: /node_modules/
-            },
+            // {
+            //     test: /\.(ts|tsx)$/,
+            //     use: "ts-loader",
+            //     exclude: /node_modules/
+            // },
             {
                 // .css/less 解析
                 test: /\.(less|css)$/,
