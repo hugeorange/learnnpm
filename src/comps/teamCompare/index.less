@@ -1,0 +1,52 @@
+.match-team-compare {
+    padding: 0 15px; /*no*/
+    color: #191C22;
+    font-size: 13px; /*no*/
+    .team-compare {
+        margin-top: 29px; /*no*/
+        .team-item-data {
+            margin-bottom: 4px; /*no*/
+            display: flex;
+            justify-content: space-between;
+        }
+        .compare-item {
+            display: flex;
+            width: 100%;
+            height: 5px; /*no*/
+            .item {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                background:rgba(246,245,248);
+                border-radius:0px 4px 4px 0px;  /*no*/
+                &.left {
+                    border-radius:4px 0px 0px 4px; /*no*/
+                    span {
+                        border-radius:4px 0px 0px 4px; /*no*/
+                        right: 0;
+                    }
+                }
+                &.right {
+                    span {
+                        border-radius:0px 4px 4px 0px;  /*no*/
+                        left: 0;
+                    }
+                }
+                span {
+                    position: absolute;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            .gray {
+                background-color: rgba(225,226,234);
+            }
+            .red {
+                background-color: #c01e2f;
+            }
+            .blue {
+                background-color: #1c42ba;
+            }
+        }
+    }
+}

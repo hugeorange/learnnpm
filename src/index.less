@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+}
+.match-post {
+    padding-bottom: 10px; /*no*/
+    margin: 0 auto;
+    max-width: 700px; /*no*/
+    .post-title {
+        font-size: 15px; /*no*/
+        color: #191C22;
+        margin-bottom: 8px; /*no*/
+        &::before {
+            content: " ";
+            display: inline-block;
+            width: 4px; /*no*/
+            height: 15px; /*no*/
+            background-color: #c01e2f;
+            vertical-align: middle;
+            margin-right: 4px; /*no*/
+            margin-bottom: 2px; /*no*/
+        }
+        .tips {
+            font-size: 11px; /*no*/
+            margin-left: 6px; /*no*/
+            color:rgba(150,153,159,1);
+        }
+    }
+
+    .post-player {
+        .not-play {
+            margin: 12px 15px 26px; /*no*/
+            color: #191C22;
+            line-height: 20px; /*no*/
+            font-size: 13px; /*no*/
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .post-team {
+        max-width: 500px; /*no*/
+        a {
+            display: block;
+            padding: 0 15px; /*no*/
+            .see-more {
+                width: 100%;
+                height: 40px; /*no*/
+                line-height: 40px; /*no*/
+                margin-top: 16px; /*no*/
+                background:rgba(243,243,246,1);
+                border-radius: 4px;  /*no*/
+                text-align: center;
+                font-size: 13px;  /*no*/
+                color: #2D6DE8;
+                &::after {
+                    content: ' ';
+                    display: inline-block;
+                    width: 6px;   /*no*/
+                    height: 9px;  /*no*/
+                    background-image: url('./image/arrow.png');
+                    background-size: cover;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .post-recap {
+        max-width: 500px; /*no*/
+        margin: 15px; /*no*/
+        .rich-text {
+            padding: 15px; /*no*/
+            background:rgba(255,255,255,1);
+            box-shadow:0px 4px 16px 0px rgba(0,0,0,0.06);
+            border-radius: 20px;
+            border:1px solid rgba(237,237,237,1);
+            div, p, span {
+                font-size: 15px; /*no*/
+                color:rgba(25,28,34,1);
+                line-height: 28px; /*no*/
+            }
+            .recap-title {
+                color: #191C22;
+                font-weight:500;
+                font-size: 16px; /*no*/
+            }
+        }
+    }
+    .mlr-15 {
+        margin: 0 15px; /*no*/
+    }
+}

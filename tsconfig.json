@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "experimentalDecorators": true,
+        "strictNullChecks": false,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "noUnusedParameters": false,
+        "noUnusedLocals": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": false,
+        "noFallthroughCasesInSwitch": false,
+        "alwaysStrict": false,
+        "strict": false,
+        "strictBindCallApply": false,
+        "strictPropertyInitialization": false,
+        "types": [
+            "react",
+            "react-dom",
+            "node"
+        ],
+        // "baseUrl": "src",
+        // "paths": {
+        //     "src/*": [
+        //         "*"
+        //     ]
+        // }
+    },
+    "include": [
+        "src/"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "compileOnSave": false
+}
