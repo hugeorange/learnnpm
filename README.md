@@ -49,3 +49,7 @@
 |____postcss.config.js // postcss配置
 |____src // 组件源码
 ```
+### 打包方式
+- 引入 `@babel/preset-typescript`，来处理 tsx 类型信息（其作用就是删除ts类型信息）
+- webpack 配置 js、jsx、ts、tsx 都交由babel-loader 处理
+- 另外在启动一个 tsc 服务检查代码类型 `tsc --watch` (package.json npm 脚本·
