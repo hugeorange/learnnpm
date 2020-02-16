@@ -1,4 +1,5 @@
 ## 打包一个 react & typescript 的ui组件
+- [代码仓库地址](https://github.com/hugeorange/learnnpm)
 ### npm 注册登录
 - 前置条件: 切到对应的npm源
 1. `npm logout `
