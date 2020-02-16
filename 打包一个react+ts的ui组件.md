@@ -368,6 +368,7 @@ webpack 配置 js、jsx、ts、tsx 都交由babel-loader 处理
   4. [Babel学习系列4-polyfill和runtime差别(必看)](https://zhuanlan.zhihu.com/p/58624930)
   5. [Babel 编译出来还是 ES 6？难道只能上 polyfill？](https://www.zhihu.com/question/49382420/answer/223915243)
   6. [这个网站，可以让你停止“瞎配”前端工具链](https://zhuanlan.zhihu.com/p/55743174)
+  7. [https://www.tangshuang.net/7427.html](https://www.tangshuang.net/7427.html)
   - 动态polyfill方案主要是依据 `@babel/preset-env` 的 `useBuiltIn`确定的
   - `@babel/babel-polyfill` 整个应用全局引入，模拟完整的ES6+环境
   - `@babel/babel-runtime @babel/babel-plugin-transform-runtime` 开发像vue这样的框架、库，提供一个沙盒环境不会污染原型链，后者主要为前者提供引用帮助，减少代码体积
