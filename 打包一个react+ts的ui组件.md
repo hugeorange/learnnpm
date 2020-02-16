@@ -350,7 +350,7 @@ webpack 配置 js、jsx、ts、tsx 都交由babel-loader 处理
 - 语法靠`@babel/preset-env`的相关配置进行转义
 - api靠 `@babel/polyfill` 或 `@babel/runtime`和`@babel/plugin-transform-runtime`
 ---
-- update：tsc 编译器好像可以带上[polyfill](https://www.zhihu.com/question/320817212)
+- update：tsc 编译器好像可以带上[polyfill](https://www.zhihu.com/question/320817212)/[知乎提问/ts-polyfill](https://www.zhihu.com/question/322722786)
 ---
 - `有个疑问我现在也没有明确答案？`
   ```js
@@ -359,3 +359,15 @@ webpack 配置 js、jsx、ts、tsx 都交由babel-loader 处理
 
   我看了 `antd-mobile` 打包后的文件，发现像 `Promise, Object.assign`并没有做polyfill
   ```
+
+  ### babel相关-@babel/polyfill、@babel/preset-env、@babel/plugin-transform-runtime
+  - 参考文章
+  1. [Babel学习系列1-Babel历史](https://zhuanlan.zhihu.com/p/57530472)
+  2. [Babel学习系列2-Babel设计，组成](https://zhuanlan.zhihu.com/p/57883838)
+  3. [Babel学习系列3-babel-preset,babel-plugin](https://zhuanlan.zhihu.com/p/58080752)
+  4. [Babel学习系列4-polyfill和runtime差别(必看)](https://zhuanlan.zhihu.com/p/58624930)
+  5. [Babel 编译出来还是 ES 6？难道只能上 polyfill？](https://www.zhihu.com/question/49382420/answer/223915243)
+  6. [这个网站，可以让你停止“瞎配”前端工具链](https://zhuanlan.zhihu.com/p/55743174)
+  - 动态polyfill方案主要是依据 `@babel/preset-env` 的 `useBuiltIn`确定的
+  - `@babel/babel-polyfill` 整个应用全局引入，模拟完整的ES6+环境
+  - `@babel/babel-runtime @babel/babel-plugin-transform-runtime` 开发像vue这样的框架、库，提供一个沙盒环境不会污染原型链，后者主要为前者提供引用帮助，减少代码体积
