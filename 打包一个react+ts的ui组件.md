@@ -5,7 +5,7 @@
 1. `npm logout `
 2. `npm login` 
 3. `依次输入账号、密码、邮箱 `
-4. `npm publish` 
+4. `npm publish （会提示去npm官网验证邮箱地址）` 
 - npm 发布时可能遇到的[问题](https://blog.csdn.net/mrchengzp/article/details/78358994)
   1. 源出错
   2. 包名重复
@@ -173,6 +173,12 @@
                     test: /\.(png|jpg|gif)$/,
                     include: path.resolve(__dirname, "..", "src"),
                     use: ["url-loader?limit=8192&name=assets/image/[name].[hash:4].[ext]"]
+                },
+                {
+                    // 文件、字体解析
+                    test: /\.(eot|woff|svg|ttf|woff2|otf|appcache|mp3|mp4|pdf)(\?|$)/,
+                    include: path.resolve(__dirname, "..", "src"),
+                    use: ["file-loader?name=assets/font/[name].[hash:4].[ext]"]
                 },
             ]
         },
