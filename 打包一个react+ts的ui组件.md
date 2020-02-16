@@ -367,7 +367,7 @@ webpack 配置 js、jsx、ts、tsx 都交由babel-loader 处理
   我看了 `antd-mobile` 打包后的文件，发现像 `Promise, Object.assign`并没有做polyfill
   ```
 
-  ### babel相关-@babel/polyfill、@babel/preset-env、@babel/plugin-transform-runtime
+### babel相关-@babel/polyfill、@babel/preset-env、@babel/plugin-transform-runtime
   - 参考文章
   1. [Babel学习系列1-Babel历史](https://zhuanlan.zhihu.com/p/57530472)
   2. [Babel学习系列2-Babel设计，组成](https://zhuanlan.zhihu.com/p/57883838)
